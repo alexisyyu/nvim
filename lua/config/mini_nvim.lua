@@ -10,6 +10,7 @@ require("mini.surround").setup(
         }
     }
 )
+
 require("mini.comment").setup({
     mappings = {
         comment = '<leader>/',
@@ -17,3 +18,4 @@ require("mini.comment").setup({
         comment_visual = '<leader>/',
     }
 })
+

@@ -24,6 +24,11 @@ vim.api.nvim_set_keymap("n", "<leader>jj", ":resize -2<CR>", opts)
 vim.api.nvim_set_keymap("n", "<leader>ll", ":vertical resize +2<CR>", opts)
 vim.api.nvim_set_keymap("n", "<leader>hh", ":vertical resize -2<CR>", opts)
 
+-- terminal
+
+vim.api.nvim_set_keymap("n", "<leader>t", ":belowright split | term<CR>A", opts);
+vim.api.nvim_set_keymap("t", "<ESC>", [[<C-\><C-n>]], opts);
+
 -- system clipboard
 vim.api.nvim_set_keymap("n", "<leader>y", "\"+y", opts)
 vim.api.nvim_set_keymap("n", "<leader>yy", "\"+yy", opts)
