@@ -19,3 +19,18 @@ require("mini.comment").setup({
     }
 })
 
+
+require("mini.files").setup({
+    mappings = {
+    }
+})
+
+require("mini.pairs").setup({
+    mappings = {
+    }
+})
+
+require("mini.git").setup({
+    mappings = {
+    }
+})

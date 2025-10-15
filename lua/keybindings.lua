@@ -3,6 +3,9 @@ vim.g.mapleader = " "
 local keymap = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
 
+-- mini-files
+keymap("n", "<leader>d", ":lua MiniFiles.open()<CR>", opts)
+
 -- telescope
 keymap("n", "<leader>ff", ":Telescope find_files<CR>", opts)
 keymap("n", "<leader>fg", ":Telescope live_grep<CR>", opts)
